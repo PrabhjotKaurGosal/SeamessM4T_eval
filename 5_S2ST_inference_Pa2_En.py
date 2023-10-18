@@ -13,7 +13,7 @@ translator = Translator("seamlessM4T_large", "vocoder_36langs", torch.device("cu
 AudioName_Transcript_list = []
 
 ## Read contents in this directory , translate it and, save the translated audio and the text
-input_dir = "/home/prabhjot/Downloads/seamless"
+input_dir = "/home/prabhjot/Downloads/seamless/audio"
 output_dir = "/home/prabhjot/Downloads/seamless/S2ST_output_En"
 count = 0
 for file in os.listdir(input_dir):
