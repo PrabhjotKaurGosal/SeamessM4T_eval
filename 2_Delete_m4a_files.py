@@ -17,5 +17,5 @@ def Delete_m4a_files(rootdir):
      
 
 if __name__ == "__main__":
-  rootdir = "/home/prabhjot/Desktop/seamless/punjabi/valid/audio"
+  rootdir = "/home/prabhjot/Desktop/seamless/Punjabi/audio"
   Delete_m4a_files(rootdir)
