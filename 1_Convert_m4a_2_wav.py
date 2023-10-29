@@ -31,5 +31,5 @@ def Convert_2_wav(rootdir):
       #print(count)
 
 if __name__ == "__main__":
-  rootdir = "/home/prabhjot/Desktop/seamless/punjabi/valid/audio"
+  rootdir = "/home/prabhjot/Desktop/seamless/Punjabi/audio"
   Convert_2_wav(rootdir)
