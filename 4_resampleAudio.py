@@ -4,7 +4,7 @@ import os
 resample_rate = 16000
 
 ## Read contents in this directory , and resample the audios
-dir = "/home/prabhjot/Downloads/seamless/audio"
+dir = "/home/prabhjot/Downloads/seamless/audio_5"
 
 count = 0
 for file in os.listdir(dir):
