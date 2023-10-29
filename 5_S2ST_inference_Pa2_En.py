@@ -13,8 +13,8 @@ translator = Translator("seamlessM4T_large", "vocoder_36langs", torch.device("cu
 AudioName_Transcript_list = []
 
 ## Read contents in this directory , translate it and, save the translated audio and the text
-input_dir = "/home/prabhjot/Downloads/seamless/audio"
-output_dir = "/home/prabhjot/Downloads/seamless/S2ST_output_En"
+input_dir = "/home/prabhjot/Downloads/seamless/audio_5"
+output_dir = "/home/prabhjot/Downloads/seamless/audio_5_En"
 count = 0
 for file in os.listdir(input_dir):
     filename = os.fsencode(file)
@@ -34,7 +34,7 @@ for file in os.listdir(input_dir):
         #print(translated_audio_path)
         torchaudio.save(translated_audio_path, translated_audio[0].cpu(), sample_rate=sr)
 
-        ## Update the dataframe with the results
+        ## Update the list
         row_list = [filename, translated_text]
         AudioName_Transcript_list.append(row_list)
 
